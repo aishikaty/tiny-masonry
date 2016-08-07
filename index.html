@@ -15,6 +15,18 @@
 			body {
 				margin: 0;
 			}
+			a {
+				text-decoration: inherit;
+				color: #a32b75;
+				transition: .1s opacity;
+			}
+			a:hover {
+				opacity: .5;
+			}
+			a i {
+				color: #ccc;
+				font-style: normal;
+			}
 			header {
 				font-size: 200%;
 				font-weight: 200;
@@ -52,11 +64,11 @@
 			}
 			pre {
 				width: 100%;
-				max-width: 40rem;
+				max-width: 29em;
 				margin: 1rem auto;
 				background: #a32b75;
 				color: #fff;
-				padding: .25rem .5rem;
+				padding: .5rem 1rem;
 				overflow-x: auto;
 			}
 			code b {
@@ -69,6 +81,9 @@
 			}
 			.content {
 				margin-bottom: 4rem;
+			}
+			p {
+				text-align: center;
 			}
 			.loader {
 				margin-bottom: 100vh;
@@ -100,12 +115,16 @@
 			<div class="content">
 				<pre><code><b>&lt;style&gt;</b> <i>.myItem</i> { width: <span class="s">50%</span><span class="m">33.33%</span><span class="l">25%</span> } <b>&lt;/style&gt;</b>
 <b>&lt;script&gt;</b> new TinyMasonry(<i>myGrid</i>) <b>&lt;/script&gt;</b></code></pre>
+				<p>
+					<a href="tiny-masonry.js">tiny-masonry.js <i>(724 bytes)</i></a><br>
+					<a href="tiny-masonry.min.js">tiny-masonry.min.js <i>(508 bytes)</i></a>
+				</p>
 			</div>
 			<div class="grid"></div>
 			<div class="loader">Loading&hellip;</div>
 		</main>
 
-		<script src="tiny-masonry.js"></script>
+		<script src="tiny-masonry.min.js"></script>
 		<script>
 			var loader = document.querySelector(".loader")
 			var grid = document.querySelector(".grid")
