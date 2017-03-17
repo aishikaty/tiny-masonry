@@ -1,4 +1,7 @@
-/** @version: 0.2.2 */
+/**
+  @version: 0.2.2
+  @license WTFPL
+*/
 function TinyMasonry(el) {
   var self = this
   var columns = []
